@@ -1,0 +1,7 @@
+
+.forget{
+    transition: color 1s;
+}
+.forget:hover{
+  color: #4fa74f;
+}

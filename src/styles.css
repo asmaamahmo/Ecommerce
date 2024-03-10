@@ -1,1 +1,174 @@
 /* You can add global styles to this file, and also import other style files */
+/* يتعذّر إنشاء ملفات أو تعديلها أو تحميلها … مساحة التخزين غير كافية استفيدي من مساحة تخزين بسعة 100 غيغابايت مقابل ‏1.99 US$‏ ‏0.49 US$ شهريًا لمدة 3 أشهر. */
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap");
+
+:root {
+  --main-color: #0aad0a;
+  --light-color: #f0f3f2;
+  --shadow: rgba(145, 158, 171, 0.2) 0px 2px 4px -1px,
+    rgba(145, 158, 171, 0.14) 0px 4px 5px 0px,
+    rgba(145, 158, 171, 0.12) 0px 1px 10px 0px;
+  --font-family: "Encode Sans Expanded", sans-serif;
+  --rating-color: #ffc908;
+}
+
+::-webkit-scrollbar{
+  width: 15px;
+}
+::-webkit-scrollbar-track{
+  background-color: var(--light-color);
+}
+
+::-webkit-scrollbar-thumb{
+   background-color: var(--main-color);
+}
+
+body {
+  font-family: var(--font-family) !important;
+}
+
+.nav-link {
+  transition: unset !important;
+}
+.active-link {
+  background-color: var(--main-color) !important;
+  color: var(--light-color) !important;
+  border-radius: 5px;
+}
+
+.rating-color {
+  color: var(--rating-color);
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+a,
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.product {
+  border-radius: 5px;
+  /* border: solid 1px var(--main-color); */
+  transition: box-shadow 0.5s;
+  overflow: hidden;
+
+
+}
+.heart{
+  font-size: 25px;
+  position: absolute;
+  cursor: pointer;
+  bottom: 15px;
+  right: 15px;
+  z-index: 99;
+  color: black;
+}
+
+
+.color-sec{
+  color: #198754
+  ;
+}
+.product:hover {
+  box-shadow: 0 0 10px #11bd1168;
+}
+.product .btn-main{
+  transform: translateY(150%);
+  transition: transform .3s;
+}
+.product:hover .btn-main{
+  transform: translate(0);
+}
+.shadow{
+  transition: all 0.5s;
+}
+
+.font-sm {
+  font-size: 12px;
+}
+.text-main {
+  color: var(--main-color);
+}
+.bg-main {
+  background-color: var(--main-color) !important;
+}
+.bg-main-light {
+  background-color: var(--light-color) !important;
+}
+.btn-main {
+  background-color: var(--main-color);
+  padding: 7px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+.btn-main:disabled {
+  cursor: not-allowed;
+  background-color: #ccc;
+}
+.btn-main:disabled:hover {
+  background-color: #ccc;
+}
+.btn-main:hover {
+  background-color: #11bd11;
+}
+.encode-sans expanded-thin {
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.encode-sans expanded-extralight {
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.encode-sans expanded-light {
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.encode-sans expanded-regular {
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.encode-sans expanded-medium {
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.encode-sans expanded-semibold {
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.encode-sans expanded-bold {
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.encode-sans expanded-extrabold {
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.encode-sans expanded-black {
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+

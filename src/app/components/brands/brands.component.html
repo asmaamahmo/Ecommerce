@@ -1,0 +1,49 @@
+
+<section class="my-4 container">
+   <div>
+    <h2 class="text-main text-center mb-3">All Brands</h2>
+    <div class="row g-4">
+        <div (click)="getBrandId(item._id)" *ngFor="let item of brandData" class="col-md-3">
+        <div class="border rounded p-2 product">
+            <img [src]="item.image" class="w-100" [alt]="item.name">
+            <div class="p-3 text-center">
+                <p> {{item.name}} </p>
+            </div>
+        </div>
+    </div>
+    </div>
+   </div>
+
+
+   <div [class.d-none]="isHidden" class="d-none position-fixed start-0 w-100 top-0 h-100 bg-black bg-opacity-25 d-flex justify-content-center align-items-center">
+    <div class="border rounded p-2 bg-white">
+        <div class="d-flex justify-content-end">
+            <button class="btn-close " (click)="close()"></button>
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="p-3 ">
+                    <h2 class="text-main"> {{brandDetails.name}} </h2>
+                    <p> {{brandDetails.name}} </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img [src]="brandDetails.image" class="w-100" [alt]="brandDetails.name">
+                
+            </div>
+        </div>
+        <hr/>
+        <div class="d-flex justify-content-end">
+            <button (click)="close()" type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="toast">Close</button>
+        </div>
+        
+        
+    </div>
+    <div >
+    </div>
+    
+
+</div>
+</section>
+

@@ -1,0 +1,15 @@
+<section class="my-4 container">
+    <div class="row g-4">
+        <div [routerLink]="[item._id, 'subcategories']" *ngFor="let item of Product" class="col-md-4">
+            <div role="button" class="border rounded p-2 product">
+                <img height="300" [src]="item.image" class="w-100" [alt]="item.name">
+                <h3 class="text-center color-sec p-3"> {{item.name}} </h3>
+            </div>
+        </div>
+    </div>
+
+
+    <hr/>
+
+    <router-outlet></router-outlet>
+</section>

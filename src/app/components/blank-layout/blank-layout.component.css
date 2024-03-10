@@ -1,0 +1,29 @@
+
+
+
+:host{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.main-section{
+    padding-top: 80px;
+}
+
+.btn-up{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0aad0a;
+    color: #fff;
+}
